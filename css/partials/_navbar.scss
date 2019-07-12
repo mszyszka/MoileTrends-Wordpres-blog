@@ -1,0 +1,114 @@
+.navbar {
+    background: #ffffff;
+    padding: 0;
+    // height is same as the highest element inside(.navbar-togler)
+    height: 69px;
+    .navbar-toggler {
+        border: none;
+        border-radius: 0;
+        outline: none;
+        width: 70px;
+        background-color: $mt-red;
+        padding: 24px 15px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .icon-bar {
+            display: block;
+            background-color: #ffffff;
+            height: 3px;
+            transition: all 0.2s;
+            margin-top: 6px;
+            &:nth-of-type(1) {
+                width: 75%;
+                margin-top: 0;
+            }
+            &:nth-of-type(2) {
+                width: 100%;
+            }
+            &:nth-of-type(3) {
+                width: 60%;
+            }
+        }
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 69px;
+        width: 100%;
+        color: #ffffff;
+        // MAIN MENU
+        ul.main-menu {
+            background-color: $mt-red;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            padding: 37px 0 37px 0;
+            a {
+                display: block;
+                padding: 13px 50px 13px 70px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        // SUB MENU
+        .sub-menu {
+            background-color: $darker-red;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            padding: 37px 0 37px 0;
+            width: calc(100% - 70px);
+            padding: 35px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            a {
+                display: block;
+                padding: 13px 30px 13px 23px;
+                color: #FECDCD;
+                font-weight: 500;
+
+            }
+            .to-main-menu-arrow {
+                img {
+                    width: 20px;
+                    margin: 0 0 40px 27px;
+                }
+            }
+            h2.category {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 13px 23px;
+            }
+        }
+    }
+    .top-nav-logo-a {
+        img {
+            width: 60px;
+        }
+    }
+    .social-media {
+        margin: 0 10px 0 0;
+        position: absolute;
+        right: 0;
+        ul {
+            margin-bottom: 0;
+            list-style-type: none;
+            li {
+                display: inline-block;
+                a {
+                    padding: 5px;
+                    // &:last-of-type { padding-right: 0; }
+                    img {
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
