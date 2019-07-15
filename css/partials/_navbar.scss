@@ -44,6 +44,8 @@
             font-weight: 600;
             text-align: left;
             padding: 37px 0 37px 0;
+            // In graphic project it is 67px wide, but it doesn't look good on 320px screens
+            border-right: solid 50px $darker-red;
             a {
                 display: block;
                 padding: 13px 50px 13px 70px;
@@ -59,7 +61,6 @@
             font-size: 16px;
             font-weight: 600;
             text-align: left;
-            padding: 37px 0 37px 0;
             width: calc(100% - 70px);
             padding: 35px 0;
             position: absolute;
@@ -71,12 +72,13 @@
                 padding: 13px 30px 13px 23px;
                 color: #FECDCD;
                 font-weight: 500;
-
             }
             .to-main-menu-arrow {
+                padding: 10px;
+                margin: 0 0 30px 17px;
+                outline: none;
                 img {
                     width: 20px;
-                    margin: 0 0 40px 27px;
                 }
             }
             h2.category {

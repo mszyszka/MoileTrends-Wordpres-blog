@@ -1,8 +1,6 @@
+<!-- Zamykanie sub-menu na onclicka na .to-main-menu-arrow -->
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="pl">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +16,8 @@
             <p class="browsehappy">You are using an<strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light d-flex align-content-center w-100">
+        <!-- NAVBAR -->
+        <nav class="navbar  navbar-light d-flex align-content-center w-100">
             <!-- hamburger button -->
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="icon-bar top-bar"></span>
@@ -28,7 +26,7 @@
             </button>
             <!-- mobileTrends logo -->
             <a href="#" class="top-nav-logo-a mr-auto ml-auto">
-                <img src="img/logoMT/mt-logo2x.png " class="top-nav-logo" alt="MobileTrends conference logo">
+                <img src="img/logoMT/mt-logo2x.png" class="top-nav-logo" alt="MobileTrends conference logo">
             </a>
             <!-- social media links -->
             <div class="social-media d-none d-sm-block">
@@ -39,23 +37,102 @@
                     <li><a href="#"><img src="img/social-media-icons/wifi.png"></a></li>
                 </ul>
             </div>
-            <!-- main menu -->
+            <!-- menu -->
             <div class="collapse navbar-collapse" id="navbarMenu">
+            <!-- main menu -->
                 <ul class="main-menu">
-                    <li class="nav-item"><a class="link1" data-target="target1" href="#target1">m-commerce</a></li>
-                    <li class="nav-item"><a class="link2" data-target="target2" href="#target2">oprogramowanie</a></li>
+                    <li class="nav-item"><a class="link1" data-target="sub-menu-1" href="#target1">m-commerce</a></li>
+                    <li class="nav-item"><a class="link2" data-target="sub-menu-2" href="#target2">oprogramowanie</a></li>
+                    <li class="nav-item"><a class="link3" data-target="sub-menu-3" href="#target3">aplikacje</a></li>
+                    <li class="nav-item"><a class="link4" data-target="sub-menu-4" href="#target4">sprzęt</a></li>
+                    <li class="nav-item"><a class="link5" data-target="sub-menu-5" href="#target5">raporty</a></li>
+                    <li class="nav-item"><a class="link6" data-target="sub-menu-6" href="#target6">ludzie</a></li>
+                    <li class="nav-item"><a class="link7" data-target="sub-menu-7" href="#target6">wydarzenia</a></li>
+                    <li class="nav-item"><a class="link8" data-target="sub-menu-8" href="#target6">TV</a></li>
+                </ul>
+                <!-- sub menu 1 -->
+                <ul class="sub-menu sub-menu-1 d-none">
+                    <button class="to-main-menu-arrow">
+                        <img src="img/icons/arrowLeft.png">
+                    </button>
+                    <h2 class="category">m-commerce</h2>
                     <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
                     <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
                     <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
                     <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">wydarzenia</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">TV</a></li>
                 </ul>
-                <ul class="sub-menu d-none">
+                <!-- sub menu 2 -->
+                <ul class="sub-menu sub-menu-2 d-none">
                     <button class="to-main-menu-arrow">
                         <img src="img/icons/arrowLeft.png">
                     </button>
                     <h2 class="category">oprogramowanie</h2>
+                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                </ul>
+                <!-- sub menu 3 -->
+                <ul class="sub-menu sub-menu-3 d-none">
+                    <button class="to-main-menu-arrow">
+                        <img src="img/icons/arrowLeft.png">
+                    </button>
+                    <h2 class="category">aplikacje</h2>
+                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                </ul>
+                <!-- sub menu 4 -->
+                <ul class="sub-menu sub-menu-4 d-none">
+                    <button class="to-main-menu-arrow">
+                        <img src="img/icons/arrowLeft.png">
+                    </button>
+                    <h2 class="category">sprzęt</h2>
+                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                </ul>
+                <!-- sub menu 5 -->
+                <ul class="sub-menu sub-menu-5 d-none">
+                    <button class="to-main-menu-arrow">
+                        <img src="img/icons/arrowLeft.png">
+                    </button>
+                    <h2 class="category">raporty</h2>
+                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                </ul>
+                <!-- sub menu 6 -->
+                <ul class="sub-menu sub-menu-6 d-none">
+                    <button class="to-main-menu-arrow">
+                        <img src="img/icons/arrowLeft.png">
+                    </button>
+                    <h2 class="category">ludzie</h2>
+                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                </ul>
+                <!-- sub menu 7 -->
+                <ul class="sub-menu sub-menu-7 d-none">
+                    <button class="to-main-menu-arrow">
+                        <img src="img/icons/arrowLeft.png">
+                    </button>
+                    <h2 class="category">wydarzenia</h2>
+                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                </ul>
+                <!-- sub menu 8 -->
+                <ul class="sub-menu sub-menu-8 d-none">
+                    <button class="to-main-menu-arrow">
+                        <img src="img/icons/arrowLeft.png">
+                    </button>
+                    <h2 class="category">tv</h2>
                     <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
                     <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
                     <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
