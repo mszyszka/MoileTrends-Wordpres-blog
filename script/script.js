@@ -1,42 +1,31 @@
-function openSubMenu() {
+function openAndCloseSubMenu() {
+    //take all links from main manu so we can add addEventListener to them
+    const MainMenuItems = document.querySelectorAll('.main-menu .nav-item a');
 
-    const menuItems = document.querySelectorAll('.main-menu .nav-item a');
-
-    for(let i = 0; i < menuItems.length; i++){
-        let item = menuItems[i];
+    for(let i = 0; i < MainMenuItems.length; i++){
+        let item = MainMenuItems[i];
         item.addEventListener('click', function(){
+            //give dark red background to clicked element
+            this.classList.add('darker-red');
+            //data-target atribute in main menu links, are a class of sub-menu for this links
+            //take data-target of this item, so we can show sub-menu that has class like it
             let itemDataTarget = this.dataset.target;
             //take proper sub menu
-            let subMenu = document.getElementsByClassName(itemDataTarget)[0];
+            let subMenuForThisItem = document.getElementsByClassName(itemDataTarget)[0];
             // show proper sub menu
-            subMenu.classList.add('d-block');
+            subMenuForThisItem.classList.add('d-block');
+            //take button .to-main-menu-arrow 
+            let toMainMenuArrow = document.getElementsByClassName('to-main-menu-arrow')[i];
+            //addEventListener to toMainMenuArrow 
+            toMainMenuArrow.addEventListener('click', function(){
+                //remove class d-block from
+                subMenuForThisItem.classList.remove('d-block');
+                item.classList.remove('darker-red');
+            })
         });
     }
 }
-openSubMenu();
-
-function closeSubMenu() {
-    let toMainMenuArrows = document.getElementsByClassName('to-main-menu-arrow');
-    for (let i = 0; i > toMainMenuArrows; i++) {
-        let item = toMainMenuArrows[i];
-        item.addEventListener('click', function() {
-            console.log('działa');
-        });
-    }
-}
-
-closeSubMenu();
+openAndCloseSubMenu();
 
 
-// toMainMenuArrow.addEventListener('onclick', function() {
-//     console.log('działa');
-// });
 
-// function closeSubMenu() {
-//     console.log("jakdf")
-//     // event.target.addEventListener('click', function() {
-//     //     // subMenu.classList.remove('d-block');
-//     //     console.log('mam cie');
-//     // });
-    
-// }

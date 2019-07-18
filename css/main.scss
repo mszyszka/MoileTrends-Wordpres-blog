@@ -34,6 +34,10 @@ button {
   border: none;
   outline: none;
 }
+
+.darker-red {
+    background-color: $darker-red!important;
+}
 // CSS RESET
 
 html, body, div, span, applet, object, iframe,
