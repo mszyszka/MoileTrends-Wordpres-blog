@@ -101,7 +101,8 @@
       .navbar .navbar-collapse ul.main-menu a:hover {
         cursor: pointer; }
   .navbar .navbar-collapse .sub-menu {
-    width: calc(100% - 365px); }
+    width: calc(100% - 365px);
+    padding: 35px 0 0 40px; }
     .navbar .navbar-collapse .sub-menu a {
       display: block;
       padding: 13px 30px 13px 23px;
@@ -109,7 +110,7 @@
       font-weight: 500; }
     .navbar .navbar-collapse .sub-menu .to-main-menu-arrow {
       padding: 10px;
-      margin: 0 0 30px 17px;
+      margin: 0 0 30px 0;
       outline: none; }
       .navbar .navbar-collapse .sub-menu .to-main-menu-arrow img {
         width: 20px; }
@@ -117,6 +118,93 @@
       font-size: 18px;
       font-weight: 600;
       margin: 0 0 13px 23px; } }
+@media (min-width: 992px) {
+  .navbar {
+    height: 100px; }
+    .navbar .top-nav-logo-a img {
+      width: 85px; }
+    .navbar .navbar-toggler {
+      padding: 0 0 0 26px;
+      width: 100px;
+      height: 100px; }
+      .navbar .navbar-toggler .icon-bar {
+        height: 4px; }
+        .navbar .navbar-toggler .icon-bar:nth-of-type(1) {
+          width: 39px;
+          margin-top: 0; }
+        .navbar .navbar-toggler .icon-bar:nth-of-type(2) {
+          width: 48px;
+          margin-top: 8px; }
+        .navbar .navbar-toggler .icon-bar:nth-of-type(3) {
+          width: 29px;
+          margin-top: 8px; }
+    .navbar .navbar-collapse {
+      top: 100px; }
+      .navbar .navbar-collapse ul.main-menu {
+        padding: 69px 0 69px 0; }
+        .navbar .navbar-collapse ul.main-menu .nav-item a {
+          font-size: 16px;
+          padding: 18px 50px 18px 70px; }
+      .navbar .navbar-collapse .sub-menu {
+        padding: 82px 0 0 40px; }
+        .navbar .navbar-collapse .sub-menu h2.category {
+          font-size: 20px;
+          font-weight: 600;
+          margin: 0 0 17px 23px; }
+      .navbar .navbar-collapse section.do-not-miss {
+        width: 50%;
+        height: 100%;
+        background: #D61E12;
+        position: absolute;
+        top: 0;
+        right: 0; }
+        .navbar .navbar-collapse section.do-not-miss h2 {
+          font-size: 24px;
+          text-transform: uppercase;
+          font-weight: 700; }
+        .navbar .navbar-collapse section.do-not-miss article.do-not-miss-article .article-image {
+          width: 300px;
+          height: 150px;
+          background-image: url("/img/mountains.png");
+          background-size: cover;
+          background-position: 50% 50%; }
+      .navbar .navbar-collapse aside.previous-editions {
+        background: #3E3E3E;
+        color: white;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%; }
+        .navbar .navbar-collapse aside.previous-editions h2 {
+          font-weight: 600;
+          font-size: 20px;
+          margin: 80px 0 17px 50px; }
+        .navbar .navbar-collapse aside.previous-editions ul li a {
+          display: block;
+          font-size: 15px;
+          font-weight: 700;
+          padding: 13px 100px 13px 50px; } }
+@media (min-width: 1200px) {
+  .navbar .navbar-collapse ul.main-menu {
+    padding: 62px 0 62px 0; }
+    .navbar .navbar-collapse ul.main-menu .nav-item a {
+      font-size: 18px;
+      padding: 25px 50px 25px 70px; }
+  .navbar .navbar-collapse .sub-menu h2.category {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 13px 23px; }
+  .navbar .navbar-collapse aside.previous-editions {
+    width: 420px; }
+    .navbar .navbar-collapse aside.previous-editions h2 {
+      font-size: 26px;
+      font-weight: 600;
+      margin: 80px 0 17px 50px; }
+    .navbar .navbar-collapse aside.previous-editions ul li a {
+      font-size: 16px;
+      padding: 13px 100px 13px 50px; } }
 * {
   margin: 0;
   padding: 0;

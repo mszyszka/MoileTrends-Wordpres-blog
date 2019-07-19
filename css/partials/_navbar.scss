@@ -138,6 +138,7 @@
             // SUB MENU
             .sub-menu {
                 width: calc(100% - 365px);
+                padding: 35px 0 0 40px;
                 a {
                     display: block;
                     padding: 13px 30px 13px 23px;
@@ -146,7 +147,7 @@
                 }
                 .to-main-menu-arrow {
                     padding: 10px;
-                    margin: 0 0 30px 17px;
+                    margin: 0 0 30px 0;
                     outline: none;
                     img {
                         width: 20px;
@@ -156,6 +157,147 @@
                     font-size: 18px;
                     font-weight: 600;
                     margin: 0 0 13px 23px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .navbar {
+        height: 100px;
+        .top-nav-logo-a {
+            img {
+                width: 85px;
+            }
+        }
+        .navbar-toggler {
+            padding: 0 0 0 26px;
+            width: 100px;
+            height: 100px;
+            .icon-bar {
+                height: 4px;
+                &:nth-of-type(1) {
+                    width: 39px;
+                    margin-top: 0;
+                }
+                &:nth-of-type(2) {
+                    width: 48px;
+                    margin-top: 8px;
+                }
+                &:nth-of-type(3) {
+                    width: 29px;
+                    margin-top: 8px;
+                }
+            }
+        }
+        .navbar-collapse {
+            top: 100px;
+            ul.main-menu {
+                padding: 69px 0 69px 0;
+                .nav-item {
+                    a {
+                        font-size: 16px;
+                        padding: 18px 50px 18px 70px;
+                    }
+                }
+            }
+            .sub-menu {
+                padding: 82px 0 0 40px;
+
+                h2.category {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 0 0 17px 23px;
+                }
+            }
+            // DO NOT MISS SECTION
+            section.do-not-miss {
+                width: 50%;
+                height: 100%;
+                background: $darker-red;
+                position: absolute;
+                top: 0;
+                right: 0;
+                h2 {
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                article.do-not-miss-article {
+                    .article-image {
+                        width: 300px;
+                        height: 150px;
+                        background-image: url('/img/mountains.png');
+                        background-size: cover;
+                        background-position: 50% 50%;
+                    }
+                }
+            }
+            aside.previous-editions {
+                background: $dark-gray;
+                color: white;
+                text-transform: uppercase;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 300px;
+                height: 100%;
+                h2 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    margin: 80px 0 17px 50px;
+                }
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            font-size: 15px;
+                            font-weight: 700;
+                            padding: 13px 100px 13px 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .navbar {
+        .navbar-collapse {
+            ul.main-menu {
+                padding: 62px 0 62px 0;
+                .nav-item {
+                    a {
+                        font-size: 18px;
+                        padding: 25px 50px 25px 70px;
+                    }
+                }
+            }
+            .sub-menu {
+                h2.category {
+                    //Im making it 4px smaller than in project
+                    font-size: 26px;
+                    font-weight: 600;
+                    margin: 0 0 13px 23px;
+                }
+            }
+            aside.previous-editions {
+                width: 420px;
+                h2 {
+                    //Im making it 4px smaller than in project
+                    font-size: 26px;
+                    font-weight: 600;
+                    margin: 80px 0 17px 50px;
+                }
+                ul {
+                    li {
+                        a {
+                            font-size: 16px;
+                            padding: 13px 100px 13px 50px;
+                        }
+                    }
                 }
             }
         }
