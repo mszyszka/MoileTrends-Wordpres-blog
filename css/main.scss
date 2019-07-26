@@ -1,7 +1,15 @@
 // Imports
 @import 'mixins&var/mixins';
 @import 'mixins&var/var';
+@import 'partials/components';
 @import 'partials/navbar';
+@import 'partials/header';
+@import 'partials/news';
+@import 'partials/most-popular';
+@import 'partials/stay-up-to-date';
+@import 'partials/media';
+@import 'partials/footer';
+
 
 
 * {
@@ -13,12 +21,12 @@
 }
 
 a {
-    color: #ffffff;
     &:link,
     &:visited,
     &:hover,
     &:active {
-        color: #ffffff;
+        color: #fff;
+        text-decoration: none;
     }
 }
 
@@ -29,15 +37,6 @@ a:link, a:visited, a:hover, a:active {
   color: #ffffff; 
 }
 
-button {
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.darker-red {
-    background-color: $darker-red!important;
-}
 // CSS RESET
 
 html, body, div, span, applet, object, iframe,
@@ -72,7 +71,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
+    background-color: #fafafa;
 }
 
 ol, ul {

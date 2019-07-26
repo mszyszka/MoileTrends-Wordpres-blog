@@ -1,0 +1,20 @@
+section.media {
+    padding: 0 40px 0 40px;
+    section.facebook-plugin {
+    }
+
+    section.youtube-plugin {
+        .container-fluid {
+            height: 160px;
+            background: #ffffff;
+            h2 {
+                margin: 0 0 20px 0;
+            }
+            iframe {
+                height: 60px;
+                width: 170px;
+            }
+        }
+
+    }
+}

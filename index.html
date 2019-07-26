@@ -1,4 +1,10 @@
-<!-- Zamykanie sub-menu na onclicka na .to-main-menu-arrow -->
+<!-- Zamykanie  wszystkich sub-menu na onclicka na .to-main-menu-arrow -->
+<!-- po kliknięciu na hamburger ma się pojawić x -->
+<!-- ostylowanie linków i buttonów na stronie -->
+<!-- w nie przegap w nav-bar ostylować sekcję rest -->
+<!-- w navie jeśli żadne z pod menu nie jest otwartę > 992px ma się pojawiać ponownie sekcja .do-not-miss  -->
+<!-- nav-bar na lg czyli sekcja .do-not-miss pod sub-menu a obok sidebar konferencja MTC -->
+<!-- ustawienie js'em wysokości zdjęć -->
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -9,9 +15,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+        <script src="https://kit.fontawesome.com/80379f9af3.js"></script>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.3"></script>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an<strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -52,7 +63,7 @@
                 </ul>
                 <!-- sub menu 1 -->
                 <ul class="sub-menu sub-menu-1 d-none">
-                    <button class="to-main-menu-arrow d-lg-none">
+                    <button class="to-main-menu-arrow ">
                         <img src="img/icons/arrowLeft.png">
                     </button>
                     <h2 class="category">m-commerce</h2>
@@ -138,28 +149,34 @@
                     <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
                     <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
                 </ul>
-                <section class="do-not-miss d-none d-lg-block">
-                    <h2>nie przegap</h2>
-                    <article class="do-not-miss-article">
-                        <div class="article-image">
-                            <!-- image is as a background -->
-                            <label class="category">smartfon</label>
-                        </div>
-                        <span>sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
-                        <img class='clock-icon' alt="clock icon" src="#">
-                        <span>15 marca 2019</span>
-                        <button>czytaj</button>
-                    </article>
-                    <article class="do-not-miss-article">
-                            <div class="article-image">
-                                <!-- image is as a background -->
-                                <label class="category">smartfon</label>
-                            </div>
-                            <span>sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
-                            <img class='clock-icon' alt="clock icon" src="#">
-                            <span>15 marca 2019</span>
-                            <button>czytaj</button>
-                        </article>
+                <section class="do-not-miss d-none d-lg-flex">
+                    <div class="container mr-auto ml-auto">
+                            <h2>nie przegap</h2>
+                            <article class="do-not-miss-article d-flex">
+                                <div class="article-image d-flex flex-column justify-content-end">
+                                    <!-- image is as a background -->
+                                    <label class="category align-self-baseline">smartfon</label>
+                                </div>
+                                <div class="rest">
+                                    <span>sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                    <i class="far fa-clock"></i>
+                                    <span class="date">15 marca 2019</span>
+                                    <button class="read d-block">czytaj</button>
+                                </div>
+                            </article>
+                            <article class="do-not-miss-article d-flex">
+                                <div class="article-image d-flex flex-column justify-content-end">
+                                    <!-- image is as a background -->
+                                    <label class="category align-self-baseline">smartfon</label>
+                                </div>
+                                <div class="rest">
+                                    <span>sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                    <i class="far fa-clock"></i>
+                                    <span class="date">15 marca 2019</span>
+                                    <button class="read d-block">czytaj</button>
+                                </div>
+                            </article>
+                    </div>
                 </section>
                 <aside class="previous-editions d-none">
                     <h2>konferencja<br> mtc</h2>
@@ -174,14 +191,259 @@
             </div>
             
         </nav>
+        <header class="mr-auto ml-auto">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+
+                    <!-- col with carousel -->
+                    <div class="col-12 col-lg-8 col-xl-7 mb-2 mb-lg-0 pr-lg-2 pr-xl-3">
+                        <div class="owl-carousel">
+                            <a href="#">
+                                <article class="my-article first-carousel-article d-flex flex-column justify-content-end">
+                                    <button class="category-btn align-self-baseline">aplikacje</button>
+                                    <h2>ostatnie 2 tygodnie dzielą nas od największego wydarzenia branży</h2>
+                                </article>
+                            </a>
+                            <a href="#">
+                                <article class="my-article second-carousel-article d-flex flex-column justify-content-end">
+                                    <button class="category-btn align-self-baseline">aplikacje</button>
+                                    <h2>ostatnie 2 tygodnie dzielą nas od największego wydarzenia branży</h2>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-xl-5">
+                        <div class="row no-gutters">
+                            <!-- col -->
+                            <div class="col-12">
+                                <article class="my-article first-article d-flex flex-column justify-content-end">
+                                    <button class="category-btn align-self-baseline">aplikacje</button>
+                                    <h2>ostatnie 2 tygodnie dzielą nas od największego wydarzenia branży</h2>                            
+                                </article>
+                            </div>
+                            <!-- col -->
+                            <div class="col-12">
+                                <article class="my-article second-article d-flex flex-column justify-content-end">
+                                    <button class="category-btn align-self-baseline">aplikacje</button>
+                                    <h2>ostatnie 2 tygodnie dzielą nas od największego wydarzenia branży</h2>                            
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <aside class="ad d-flex justify-content-center">
+                <span>reklama</span>
+        </aside>
+
+        <section class="news">
+
+            <h2 class="news-section-h2">Aktualności</h2>
+
+            <article class="news-article article">
+                <div class="article-photo d-flex flex-column justify-content-end">
+                    <button class="category-btn align-self-baseline">aplikacje</button>
+                </div>
+                <div class="text">
+                    <h2>Naukowcy dowodzą, że wieczorne korzystanie ze smartfona może zaostrzać zaburzenia snu</h2>
+                    <p>Wszyszcy uwielbiamy smartfony, nie oznacza to jednak, że powinniśmy zabierać je ze sobą nawet do łóżka.
+                        Ich wpływ na pogłębienie zaburzeń rytmu okołodobowego potwierdzają również najnowsze badania.
+                    </p>
+                    <div class="date-and-read-btn d-flex align-items-center">
+                        <i class="far fa-clock"></i>
+                        <span class="date">15 marca 2019</span>
+                        <a href="#" class="link-to-article ml-auto">czytaj</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-article article">
+                <div class="article-photo d-flex flex-column justify-content-end">
+                    <button class="category-btn align-self-baseline">aplikacje</button>
+                </div>
+                <div class="text">
+                    <h2>Naukowcy dowodzą, że wieczorne korzystanie ze smartfona może zaostrzać zaburzenia snu</h2>
+                    <p>Wszyszcy uwielbiamy smartfony, nie oznacza to jednak, że powinniśmy zabierać je ze sobą nawet do łóżka.
+                        Ich wpływ na pogłębienie zaburzeń rytmu okołodobowego potwierdzają również najnowsze badania.
+                    </p>
+                    <div class="date-and-read-btn d-flex align-items-center">
+                        <i class="far fa-clock"></i>
+                        <span class="date">15 marca 2019</span>
+                        <a href="#" class="link-to-article ml-auto">czytaj</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-article article">
+                <div class="article-photo d-flex flex-column justify-content-end">
+                    <button class="category-btn align-self-baseline">aplikacje</button>
+                </div>
+                <div class="text">
+                    <h2>Naukowcy dowodzą, że wieczorne korzystanie ze smartfona może zaostrzać zaburzenia snu</h2>
+                    <p>Wszyszcy uwielbiamy smartfony, nie oznacza to jednak, że powinniśmy zabierać je ze sobą nawet do łóżka.
+                        Ich wpływ na pogłębienie zaburzeń rytmu okołodobowego potwierdzają również najnowsze badania.
+                    </p>
+                    <div class="date-and-read-btn d-flex align-items-center">
+                        <i class="far fa-clock"></i>
+                        <span class="date">15 marca 2019</span>
+                        <a href="#" class="link-to-article ml-auto">czytaj</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="most-popular">
+
+            <div class="container-fluid">
+
+                <h2>Najpopularniejsze</h2>
+
+                <article class="most-popular-top-article article">
+                    <div class="article-photo d-flex flex-column justify-content-end">
+                        <button class="category-btn align-self-baseline">aplikacje</button>
+                    </div>
+                    <div class="text d-flex flex-column">
+                        <p>sprawdź kto został nominowany do mobile trends awards 2019 i ma szansę na oskara branży mobile!
+                        </p>
+                        <a href="#" class="link-to-article align-self-end">czytaj</a>
+                    </div>
+                </article>
+
+                <article class="most-popular-article article">
+                        <div class="text d-flex flex-column">
+                            <p>sprawdź kto został nominowany do mobile trends awards 2019 i ma szansę na oskara branży mobile!
+                            </p>
+                            <a href="#" class="link-to-article align-self-end">czytaj</a>
+                        </div>
+                </article>
+
+                <article class="most-popular-article article">
+                        <div class="text d-flex flex-column">
+                            <p>sprawdź kto został nominowany do mobile trends awards 2019 i ma szansę na oskara branży mobile!
+                            </p>
+                            <a href="#" class="link-to-article align-self-end">czytaj</a>
+                        </div>
+                </article>
+
+                <article class="most-popular-article article">
+                        <div class="text d-flex flex-column">
+                            <p>sprawdź kto został nominowany do mobile trends awards 2019 i ma szansę na oskara branży mobile!
+                            </p>
+                            <a href="#" class="link-to-article align-self-end">czytaj</a>
+                        </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="stay-up-to-date">
+            <div class="container-fluid d-flex flex-column align-items-center">
+                <h2>Bądź na bieżąco</h2>
+                <h3>zapisz się do naszego newslettera</h3>
+                <form>
+                    <input type="email" placeholder="Wpisz adres e-mail" class="email-input">
+                    <input type="submit" value="zapisz się" class="submit-input">
+                </form>
+                <p>Kliknięcie przycisku "Zapisz się" oznacza wyrażenie zgody na przetważanie danych osobowych (adres e-mail) w celu ...</p>
+                <span>czytaj więcej...</span>
+            </div>
+        </section>
+
+        <aside class="ad second-ad d-flex justify-content-center align-items-center mr-auto ml-auto">
+            <span class="d-flex align-items-center justify-content-center">reklama</span>
+        </aside>
+
+        <section class="media">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-sm-12 p-0">
+                        <section class="facebook-plugin">
+                            <div class="container-fluid p-0">
+                                <div class="fb-page mr-auto ml-auto" data-href="https://www.facebook.com/mobiletrendspl/"
+                                data-tabs=""  data-height="" data-width="300px" 
+                                data-small-header="false" data-adapt-container-width="true" 
+                                data-hide-cover="false" data-show-facepile="true">
+                                    <blockquote cite="https://www.facebook.com/mobiletrendspl/" class="fb-xfbml-parse-ignore">
+                                        <a href="https://www.facebook.com/mobiletrendspl/">Mobile Trends</a>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-sm-12 p-0 mt-4">
+                        <section class="youtube-plugin d-flex">
+                            <div class="container-fluid p-0 d-flex flex-column align-items-center justify-content-center">
+                                <h2>MobileTrendsTV</h2>
+                                <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no"  tabindex="0" vspace="0" width="100%" id="I0_1564128232691" name="I0_1564128232691" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCU9WXm_w16eWN25aQr5x97Q&amp;layout=full&amp;count=default&amp;origin=https%3A%2F%2Fwww.mobiletrends.pl&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.pl.pjfpjatBwII.O%2Fam%3DwQE%2Fd%3D1%2Frs%3DAGLTcCN39AgBRN05xcXZkNoc9STSt_EFhA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1564128232691&amp;_gfid=I0_1564128232691&amp;parent=https%3A%2F%2Fwww.mobiletrends.pl&amp;pfname=&amp;rpctoken=38416808" data-gapiattached="true"></iframe>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column">
+                        <img class="mr-auto ml-auto" src="/img/logoMT/mt-logo-white.png" alt="MobileTrends Conference logo">
+                    </div>
+                    <div class="col-12">
+                        <h2>Mobile Trends</h2>
+                        <ul>
+                            <li><a href="#">O Mobile Trends</a></li>
+                            <li><a href="#">Polityka prywatności</a></li>
+                            <li><a href="#">Reklama</a></li>
+                            <li><a href="#">Redakcja</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h2>Konferencje</h2>
+                        <ul>
+                            <li><a href="#">2019</a></li>
+                            <li><a href="#">m-commerce</a></li>
+                            <li><a href="#">2018</a></li>
+                            <li><a href="#">2017</a></li>
+                            <li><a href="#">2016</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h2>Bądź na bieżąco</h2>
+                        <ul>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Google+</a></li>
+                            <li><a href="#">rss</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+        
+
         <!-- jQuery -->
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.js"
             integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
             crossorigin="anonymous">
         </script>
+        <!-- owl carouse -->
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <!-- JS -->
-        <script src="script/script.js"></script>
+        <script src="script.js"></script>
         <!-- Bootstrap -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>

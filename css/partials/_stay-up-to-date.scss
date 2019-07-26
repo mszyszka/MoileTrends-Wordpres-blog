@@ -1,0 +1,51 @@
+section.stay-up-to-date {
+    padding: 0 12px 0 12px;
+    .container-fluid {
+        background: #3b3736;
+        padding: 30px 25px;
+        color: #ffffff;
+        text-align: center;
+        h2 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 14px;
+            margin: 0 0 20px 0;
+        }
+        .email-input {
+            text-indent: 15px;
+            width: 100%;
+            border: none;
+            padding: 10px 15;
+            padding: 10px 15px 10px 0;
+            font-size: 14px;
+            margin: 0 0 20px 0;
+            max-width: 300px;
+            &::placeholder {
+                color: #3b3736;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+        .submit-input {
+            background: $mt-red;
+            width: 120px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            display: inline-block;
+            margin: 0 0 20px 0;
+        }
+        p {
+            font-size: 11px;
+            margin: 0 0 5px 0;
+        }
+        span {
+            font-size: 11px;
+        }
+    }
+}

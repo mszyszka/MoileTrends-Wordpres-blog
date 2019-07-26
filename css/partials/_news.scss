@@ -1,0 +1,20 @@
+section.news {
+    padding: 0 12px 0 12px;
+    .news-section-h2 {
+        font-weight: 600;
+        margin: 0 0 20px 0;
+    }
+    .article {
+        background-color: #ffffff;
+        .date-and-read-btn {
+            .date {
+                font-size: 12px;
+                margin: 0 0 0 5px;
+            }
+            .link-to-article {
+                background: $mt-red;
+                color: #ffffff;
+            }
+        }
+    }
+}

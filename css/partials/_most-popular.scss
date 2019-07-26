@@ -1,0 +1,36 @@
+section.most-popular {
+    padding: 0 12px 0 12px;
+    margin: 20px 0 0 0;
+    .container-fluid {
+        background: $mt-red;
+        padding: 20px 15px 0 15px;
+        h2 {
+            color: #ffffff;
+            font-weight: 600;
+        }
+        .article {
+            background-color: $mt-red;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid #efefef;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            .text {
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #ffffff;
+                font-weight: 500;
+                padding: 0;
+                margin: 15px 0 0 0;
+                line-height: 1.4;
+                
+                .link-to-article {
+                   background: #efefef;
+                   color: #000000;
+                   padding: 10px 20px;
+                   font-weight: 500;
+                }
+            }
+        }
+    }
+}
