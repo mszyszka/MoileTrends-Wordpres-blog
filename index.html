@@ -5,6 +5,7 @@
 <!-- w navie jeśli żadne z pod menu nie jest otwartę > 992px ma się pojawiać ponownie sekcja .do-not-miss  -->
 <!-- nav-bar na lg czyli sekcja .do-not-miss pod sub-menu a obok sidebar konferencja MTC -->
 <!-- ustawienie js'em wysokości zdjęć -->
+
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -28,7 +29,7 @@
         <![endif]-->
 
         <!-- NAVBAR -->
-        <nav class="navbar  navbar-light d-flex align-content-center w-100">
+        <nav class="navbar navbar-light d-flex align-content-center w-100">
             <!-- hamburger button -->
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="icon-bar top-bar"></span>
@@ -50,147 +51,675 @@
             </div>
             <!-- menu -->
             <div class="collapse navbar-collapse" id="navbarMenu">
-            <!-- main menu -->
-                <ul class="main-menu">
-                    <li class="nav-item"><a class="link1" data-target="sub-menu-1" href="#target1">m-commerce</a></li>
-                    <li class="nav-item"><a class="link2" data-target="sub-menu-2" href="#target2">oprogramowanie</a></li>
-                    <li class="nav-item"><a class="link3" data-target="sub-menu-3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="sub-menu-4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="sub-menu-5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="sub-menu-6" href="#target6">ludzie</a></li>
-                    <li class="nav-item"><a class="link7" data-target="sub-menu-7" href="#target6">wydarzenia</a></li>
-                    <li class="nav-item"><a class="link8" data-target="sub-menu-8" href="#target6">TV</a></li>
-                </ul>
-                <!-- sub menu 1 -->
-                <ul class="sub-menu sub-menu-1 d-none">
-                    <button class="to-main-menu-arrow ">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">m-commerce</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <!-- sub menu 2 -->
-                <ul class="sub-menu sub-menu-2 d-none">
-                    <button class="to-main-menu-arrow">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">oprogramowanie</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <!-- sub menu 3 -->
-                <ul class="sub-menu sub-menu-3 d-none">
-                    <button class="to-main-menu-arrow">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">aplikacje</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <!-- sub menu 4 -->
-                <ul class="sub-menu sub-menu-4 d-none">
-                    <button class="to-main-menu-arrow">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">sprzęt</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <!-- sub menu 5 -->
-                <ul class="sub-menu sub-menu-5 d-none">
-                    <button class="to-main-menu-arrow">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">raporty</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <!-- sub menu 6 -->
-                <ul class="sub-menu sub-menu-6 d-none">
-                    <button class="to-main-menu-arrow">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">ludzie</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <!-- sub menu 7 -->
-                <ul class="sub-menu sub-menu-7 d-none">
-                    <button class="to-main-menu-arrow">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">wydarzenia</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <!-- sub menu 8 -->
-                <ul class="sub-menu sub-menu-8 d-none">
-                    <button class="to-main-menu-arrow">
-                        <img src="img/icons/arrowLeft.png">
-                    </button>
-                    <h2 class="category">tv</h2>
-                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
-                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
-                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
-                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
-                </ul>
-                <section class="do-not-miss d-none d-lg-flex">
-                    <div class="container mr-auto ml-auto">
-                            <h2>nie przegap</h2>
-                            <article class="do-not-miss-article d-flex">
-                                <div class="article-image d-flex flex-column justify-content-end">
-                                    <!-- image is as a background -->
-                                    <label class="category align-self-baseline">smartfon</label>
-                                </div>
-                                <div class="rest">
-                                    <span>sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
-                                    <i class="far fa-clock"></i>
-                                    <span class="date">15 marca 2019</span>
-                                    <button class="read d-block">czytaj</button>
-                                </div>
-                            </article>
-                            <article class="do-not-miss-article d-flex">
-                                <div class="article-image d-flex flex-column justify-content-end">
-                                    <!-- image is as a background -->
-                                    <label class="category align-self-baseline">smartfon</label>
-                                </div>
-                                <div class="rest">
-                                    <span>sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
-                                    <i class="far fa-clock"></i>
-                                    <span class="date">15 marca 2019</span>
-                                    <button class="read d-block">czytaj</button>
-                                </div>
-                            </article>
+
+                <!-- menu when width < 768px -->
+                <div class="container-fluid p-0 d-md-none">
+                    <div class="row no-gutters">
+
+                        <!-- main-menu -->
+                        <div class="col-10 main-menu-sm-col">
+                            <ul class="main-menu">
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-1" href="#target1">m-commerce</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-2" href="#target2">oprogramowanie</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-3" href="#target3">aplikacje</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-4" href="#target4">sprzęt</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-5" href="#target5">raporty</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-6" href="#target6">ludzie</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-7" href="#target6">wydarzenia</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-sm-8" href="#target6">TV</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-2"></div>
+
+                        <!-- to main menu button -->
+                        <button class="to-main-menu-arrow d-none">
+                            <img src="img/icons/arrowLeft.png" alt="Go back arrow">
+                        </button>
+
+                        <!-- sub-menus that are display when user click on main-menu item -->
+                        <!-- sub menu 1 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-1 d-none ">
+                            <ul class="sub-menu-ul ">
+                                <h2 class="category">m-commerce</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+                        <!-- sub menu 2 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-2 d-none ">
+                            <ul class="sub-menu-ul">
+                                <h2 class="category">oprogramowanie</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+                        <!-- sub menu 3 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-3 d-none ">
+                            <ul class="sub-menu-ul ">
+                                <h2 class="category">aplikacje</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+                        <!-- sub menu 4 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-4 d-none ">
+                            <ul class="sub-menu-ul ">
+                                <h2 class="category">sprzęt</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+                        <!-- sub menu 5 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-5 d-none ">
+                            <ul class="sub-menu-ul ">
+                                <h2 class="category">raporty</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+                        <!-- sub menu 6 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-6 d-none ">
+                            <ul class="sub-menu-ul">
+                                <h2 class="category">ludzie</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+                        <!-- sub menu 7 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-7 d-none ">
+                            <ul class="sub-menu-ul">
+                                <h2 class="category">wydarzenia</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+                        <!-- sub menu 8 -->
+                        <div class="col-10 sub-menu-col-sm sub-menu-sm-8 d-none ">
+                            <ul class="sub-menu-ul">
+                                <h2 class="category">tv</h2>
+                                <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                            </ul>
+                        </div>
+
                     </div>
-                </section>
-                <aside class="previous-editions d-none">
-                    <h2>konferencja<br> mtc</h2>
-                    <ul class="previous-editions-menu">
-                        <li><a href="#">2019</a></li>
-                        <li><a href="#">m-conference</a></li>
-                        <li><a href="#">2018</a></li>
-                        <li><a href="#">2017</a></li>
-                        <li><a href="#">2016</a></li>
-                    </ul>
-                </aside>
-            </div>
-            
+
+                    <div class="row no-gutters">
+                        <div class="col-12 previous-conferences-col d-flex flex-column align-items-center">
+                            <h2>konferencja mtc</h2>
+                            <nav>
+                                <ul class="ml-auto mr-auto">
+                                    <li><a href="#">2019</a></li>
+                                    <li><a href="#">m-commerce</a></li>
+                                    <li><a href="#">2018</a></li>
+                                    <li><a href="#">2017</a></li>
+                                    <li><a href="#">2016</a></li>
+                                </ul>
+                            </nav>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- menu when width > 768px < 992px -->
+                <div class="container-fluid d-none d-lg-none d-md-block p-0">
+                    <div class="row no-gutters">
+
+                        <div class="col-md-5 main-menu-md-col">
+                            <ul class="main-menu">
+                                <li class="main-nav-item"><a data-target="sub-menu-md-1" href="#target1">m-commerce</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-2" href="#target2">oprogramowanie</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-3" href="#target3">aplikacje</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-4" href="#target4">sprzęt</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-5" href="#target5">raporty</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-6" href="#target6">ludzie</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-7" href="#target6">wydarzenia</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-8" href="#target6">TV</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-7 do-not-miss-col">
+                            <div class="row do-not-miss-row no-gutters">
+
+                                <h2>Nie przegap</h2>
+
+                                <div class="col col-md-12">
+                                    <a href="#" class="do-not-miss-a">
+                                        <article class="do-not-miss-article d-flex flex-xl-column">
+                                                <div class="article-image d-flex flex-column justify-content-end">
+                                                    <!-- image is as a background -->
+                                                    <label class="category align-self-baseline">smartfon</label>
+                                                </div>
+                                                <div class="rest">
+                                                    <span class="description">sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                                    <div class="date-and-btn d-xl-flex align-content-center">
+                                                        <i class="far fa-clock align-self-center"></i>
+                                                        <span class="date align-self-center">15 marca 2019</span>
+                                                        <!-- <button class="read d-block ml-xl-auto">czytaj</button> -->
+                                                    </div>
+                                                </div>
+                                        </article>
+                                    </a>
+                                </div>
+
+                                <div class=" col col-md-12">
+                                    <a href="#" class="do-not-miss-a">
+                                        <article class="do-not-miss-article d-flex flex-xl-column">
+                                                <div class="article-image d-flex flex-column justify-content-end">
+                                                    <!-- image is as a background -->
+                                                    <label class="category align-self-baseline">smartfon</label>
+                                                </div>
+                                                <div class="rest">
+                                                    <span class="description">sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                                    <div class="date-and-btn d-xl-flex align-content-center">
+                                                        <i class="far fa-clock align-self-center"></i>
+                                                        <span class="date align-self-center">15 marca 2019</span>
+                                                        <!-- <button class="read d-block ml-xl-auto">czytaj</button> -->
+                                                    </div>
+                                                </div>
+                                        </article>
+                                    </a>
+                                </div>
+
+                            <!-- do not miss row end -->
+                            </div>
+                        <!-- do not miss col end -->
+                        </div>
+
+                        <!-- sub-menus that are display when user click on main-menu item -->
+                        <!-- sub menu 1 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-1 d-none ">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">m-commerce</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 2 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-2 d-none ">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">oprogramowanie</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 3 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-3 d-none ">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">aplikacje</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 4 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-4 d-none ">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">sprzęt</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 5 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-5 d-none ">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">raporty</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 6 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-6 d-none ">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">ludzie</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 7 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-7 d-none ">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">wydarzenia</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 8 -->
+                        <div class="col-7 sub-menu-col-md sub-menu-md-8 d-none ">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">tv</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+
+                        <!-- to main menu button -->
+                        <button class="to-main-menu-arrow-md d-none">
+                                <img src="img/icons/arrowLeft.png" alt="Go back arrow">
+                        </button>
+
+                    <!-- row end -->
+                    </div>
+
+                    <div class="row no-gutters">
+
+                        <div class="col-12 previous-conferences-col d-flex flex-column align-items-center">
+                            <h2>konferencja mtc</h2>
+                            <nav>
+                                <ul class="ml-auto mr-auto">
+                                    <li><a href="#">2019</a></li>
+                                    <li><a href="#">m-commerce</a></li>
+                                    <li><a href="#">2018</a></li>
+                                    <li><a href="#">2017</a></li>
+                                    <li><a href="#">2016</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    <!-- row end -->
+                    </div>
+
+                <!-- container end -->
+                </div>
+
+                <!-- menu when width > 992px < 1200px -->
+                <div class="container-fluid d-none d-xl-none d-lg-block p-0">
+                   <div class="row no-gutters">
+    
+                       <div class="col-lg-4 main-menu-lg-col">
+                           <ul class="main-menu">
+                               <li class="main-nav-item"><a data-target="sub-menu-md-1" href="#target1">m-commerce</a></li>
+                               <li class="main-nav-item"><a data-target="sub-menu-md-2" href="#target2">oprogramowanie</a></li>
+                               <li class="main-nav-item"><a data-target="sub-menu-md-3" href="#target3">aplikacje</a></li>
+                               <li class="main-nav-item"><a data-target="sub-menu-md-4" href="#target4">sprzęt</a></li>
+                               <li class="main-nav-item"><a data-target="sub-menu-md-5" href="#target5">raporty</a></li>
+                               <li class="main-nav-item"><a data-target="sub-menu-md-6" href="#target6">ludzie</a></li>
+                               <li class="main-nav-item"><a data-target="sub-menu-md-7" href="#target6">wydarzenia</a></li>
+                               <li class="main-nav-item"><a data-target="sub-menu-md-8" href="#target6">TV</a></li>
+                           </ul>
+                       </div>
+    
+                       <div class="col-lg-8 do-not-miss-col">
+                           <div class="row do-not-miss-row no-gutters">
+    
+                               <h2>Nie przegap</h2>
+    
+                               <div class="col col-lg-12">
+                                   <a href="#" class="do-not-miss-a">
+                                       <article class="do-not-miss-article d-flex flex-xl-column">
+                                               <div class="article-image d-flex flex-column justify-content-end">
+                                                   <!-- image is as a background -->
+                                                   <label class="category align-self-baseline">smartfon</label>
+                                               </div>
+                                               <div class="rest">
+                                                   <span class="description">sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                                   <div class="date-and-btn d-xl-flex align-content-center">
+                                                       <i class="far fa-clock align-self-center"></i>
+                                                       <span class="date align-self-center">15 marca 2019</span>
+                                                       <!-- <button class="read d-block ml-xl-auto">czytaj</button> -->
+                                                   </div>
+                                               </div>
+                                       </article>
+                                   </a>
+                               </div>
+    
+                               <div class="col col-lg-12">
+                                   <a href="#" class="do-not-miss-a">
+                                       <article class="do-not-miss-article d-flex flex-xl-column">
+                                               <div class="article-image d-flex flex-column justify-content-end">
+                                                   <!-- image is as a background -->
+                                                   <label class="category align-self-baseline">smartfon</label>
+                                               </div>
+                                               <div class="rest">
+                                                   <span class="description">sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                                   <div class="date-and-btn d-xl-flex align-content-center">
+                                                       <i class="far fa-clock align-self-center"></i>
+                                                       <span class="date align-self-center">15 marca 2019</span>
+                                                       <!-- <button class="read d-block ml-xl-auto">czytaj</button> -->
+                                                   </div>
+                                               </div>
+                                       </article>
+                                   </a>
+                               </div>
+    
+                           <!-- do not miss row end -->
+                           </div>
+                       <!-- do not miss col end -->
+                       </div>
+    
+                       <!-- sub-menus that are display when user click on main-menu item -->
+                       <!-- sub menu 1 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-1 d-none">
+                               <ul class="sub-menu-ul ">
+                                   <h2 class="category">m-commerce</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+                       <!-- sub menu 2 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-2 d-none">
+                               <ul class="sub-menu-ul">
+                                   <h2 class="category">oprogramowanie</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+                       <!-- sub menu 3 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-3 d-none">
+                               <ul class="sub-menu-ul ">
+                                   <h2 class="category">aplikacje</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+                       <!-- sub menu 4 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-4 d-none">
+                               <ul class="sub-menu-ul ">
+                                   <h2 class="category">sprzęt</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+                       <!-- sub menu 5 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-5 d-none">
+                               <ul class="sub-menu-ul ">
+                                   <h2 class="category">raporty</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+                       <!-- sub menu 6 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-6 d-none">
+                               <ul class="sub-menu-ul">
+                                   <h2 class="category">ludzie</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+                       <!-- sub menu 7 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-7 d-none">
+                               <ul class="sub-menu-ul">
+                                   <h2 class="category">wydarzenia</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+                       <!-- sub menu 8 -->
+                       <div class="col-4 sub-menu-col-lg sub-menu-lg-8 d-none">
+                               <ul class="sub-menu-ul">
+                                   <h2 class="category">tv</h2>
+                                   <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                   <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                   <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                   <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                               </ul>
+                       </div>
+    
+                       <!-- to main menu button -->
+                       <button class="to-main-menu-arrow-lg d-none">
+                               <img src="img/icons/arrowLeft.png" alt="Go back arrow">
+                       </button>
+    
+                   <!-- row end -->
+                   </div>
+    
+                   <div class="row no-gutters">
+    
+                       <div class="col-12 previous-conferences-col d-flex flex-column align-items-center">
+                           <h2>konferencja mtc</h2>
+                           <nav>
+                               <ul class="ml-auto mr-auto">
+                                   <li><a href="#">2019</a></li>
+                                   <li><a href="#">m-commerce</a></li>
+                                   <li><a href="#">2018</a></li>
+                                   <li><a href="#">2017</a></li>
+                                   <li><a href="#">2016</a></li>
+                               </ul>
+                           </nav>
+                       </div>
+    
+                   <!-- row end -->
+                   </div>
+    
+                <!-- container end -->
+                </div>
+
+                <!-- menu when width > 1200px -->
+                <div class="container-fluid menu-container-xl d-none d-xl-block p-0">
+                    <div class="row no-gutters">
+        
+                        <div class="col-lg-3 main-menu-xl-col">
+                            <ul class="main-menu">
+                                <li class="main-nav-item"><a data-target="sub-menu-md-1" href="#target1">m-commerce</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-2" href="#target2">oprogramowanie</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-3" href="#target3">aplikacje</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-4" href="#target4">sprzęt</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-5" href="#target5">raporty</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-6" href="#target6">ludzie</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-7" href="#target6">wydarzenia</a></li>
+                                <li class="main-nav-item"><a data-target="sub-menu-md-8" href="#target6">TV</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-lg-6 do-not-miss-and-submenu-col sub-menu-col-xl">
+
+                            <div class="row sub-menu-xl-row no-gutters">
+                                <div class="col-xl-12">
+                                    <!-- sub menus here -->
+                                    <ul class="sub-menu-ul d-flex flex-column flex-wrap">
+                                        <h2 class="category">m-commerce</h2>
+                                        <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                        <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                        <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                        <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row do-not-miss-row m-0">
+                                <div class="border-top mr-auto ml-auto"></div>
+                                <div class="col-12">
+                                    <h2>Nie przegap</h2>
+                                </div>
+
+                                <div class="col col-xl-6">
+
+                                    <a href="#" class="do-not-miss-a">
+                                        <article class="do-not-miss-article d-flex flex-xl-column align-items-center">
+                                                <div class="article-image d-flex flex-column justify-content-end">
+                                                    <!-- image is as a background -->
+                                                    <label class="category align-self-baseline">smartfon</label>
+                                                </div>
+                                                <div class="rest">
+                                                    <span class="description">sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                                    <div class="date-and-btn d-xl-flex align-content-center">
+                                                        <i class="far fa-clock align-self-center"></i>
+                                                        <span class="date align-self-center">15 marca 2019</span>
+                                                        <button class="read d-block ml-xl-auto">czytaj</button>
+                                                    </div>
+                                                </div>
+                                        </article>
+                                    </a>
+                                </div>
+        
+                                <div class="col col-xl-6">
+                                    <a href="#" class="do-not-miss-a">
+                                        <article class="do-not-miss-article d-flex flex-xl-column align-items-center"> 
+                                                <div class="article-image d-flex flex-column justify-content-end">
+                                                    <!-- image is as a background -->
+                                                    <label class="category align-self-baseline">smartfon</label>
+                                                </div>
+                                                <div class="rest">
+                                                    <span class="description">sprawdź, kto został nominowany do mobile trends awards 2018 i ma szansę na oskara branży mobile!</span>
+                                                    <div class="date-and-btn d-xl-flex align-content-center">
+                                                        <i class="far fa-clock align-self-center"></i>
+                                                        <span class="date align-self-center">15 marca 2019</span>
+                                                        <button class="read d-block ml-xl-auto">czytaj</button>
+                                                    </div>
+                                                </div>
+                                        </article>
+                                    </a>
+                                </div>
+        
+                            <!-- do not miss row end -->
+                            </div>
+                        <!-- do not miss col end -->
+                        </div>
+
+                        <div class="col-xl-3 previous-conferences-col d-flex flex-column">
+                            <h2>konferencja mtc</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">2019</a></li>
+                                    <li><a href="#">m-commerce</a></li>
+                                    <li><a href="#">2018</a></li>
+                                    <li><a href="#">2017</a></li>
+                                    <li><a href="#">2016</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+        
+                        <!-- sub-menus that are display when user click on main-menu item -->
+                        <!-- sub menu 1 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-1 d-none">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">m-commerce</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 2 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-2 d-none">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">oprogramowanie</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 3 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-3 d-none">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">aplikacje</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 4 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-4 d-none">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">sprzęt</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 5 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-5 d-none">
+                                <ul class="sub-menu-ul ">
+                                    <h2 class="category">raporty</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 6 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-6 d-none">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">ludzie</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 7 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-7 d-none">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">wydarzenia</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+                        <!-- sub menu 8 -->
+                        <div class="col-12 sub-menu-col-xl sub-menu-lg-8 d-none">
+                                <ul class="sub-menu-ul">
+                                    <h2 class="category">tv</h2>
+                                    <li class="nav-item"><a class="link3" data-target="target3" href="#target3">aplikacje</a></li>
+                                    <li class="nav-item"><a class="link4" data-target="target4" href="#target4">sprzęt</a></li>
+                                    <li class="nav-item"><a class="link5" data-target="target5" href="#target5">raporty</a></li>
+                                    <li class="nav-item"><a class="link6" data-target="target6" href="#target6">ludzie</a></li>
+                                </ul>
+                        </div>
+        
+                        <!-- to main menu button -->
+                        <button class="to-main-menu-arrow-lg d-none">
+                                <img src="img/icons/arrowLeft.png" alt="Go back arrow">
+                        </button>
+        
+                    <!-- row end -->
+                    </div>
+                        
+                <!-- container end -->
+                </div>
         </nav>
+
         <header class="mr-auto ml-auto">
             <div class="container-fluid">
                 <div class="row no-gutters">
@@ -392,12 +921,12 @@
         </section>
 
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex flex-column">
+            <div class="container-fluid">
+                <div class="row mr-auto ml-auto">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-3 d-flex flex-column justify-content-center">
                         <img class="mr-auto ml-auto" src="/img/logoMT/mt-logo-white.png" alt="MobileTrends Conference logo">
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <h2>Mobile Trends</h2>
                         <ul>
                             <li><a href="#">O Mobile Trends</a></li>
@@ -407,7 +936,7 @@
                             <li><a href="#">Kontakt</a></li>
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <h2>Konferencje</h2>
                         <ul>
                             <li><a href="#">2019</a></li>
@@ -417,7 +946,7 @@
                             <li><a href="#">2016</a></li>
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <h2>Bądź na bieżąco</h2>
                         <ul>
                             <li><a href="#">Newsletter</a></li>
@@ -430,9 +959,6 @@
                 </div>
             </div>
         </footer>
-        
-
-        
 
         <!-- jQuery -->
         <script

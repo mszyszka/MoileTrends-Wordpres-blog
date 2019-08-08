@@ -115,33 +115,6 @@ aside.second-ad span {
   width: 60%;
 }
 
-.navbar .top-nav-logo-a img {
-  width: 60px;
-}
-
-.navbar .social-media {
-  margin: 0 10px 0 0;
-  position: absolute;
-  right: 0;
-}
-
-.navbar .social-media ul {
-  margin-bottom: 0;
-  list-style-type: none;
-}
-
-.navbar .social-media ul li {
-  display: inline-block;
-}
-
-.navbar .social-media ul li a {
-  padding: 5px;
-}
-
-.navbar .social-media ul li a img {
-  width: 18px;
-}
-
 .navbar .navbar-collapse {
   z-index: 100;
   position: absolute;
@@ -172,22 +145,11 @@ aside.second-ad span {
   background-color: #D61E12;
 }
 
-.navbar .navbar-collapse .sub-menu-col-sm {
+.navbar .navbar-collapse .sub-menu-col {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-}
-
-.navbar .navbar-collapse .sub-menu-col-md {
-  background: #D61E12;
-  height: initial;
-}
-
-.navbar .navbar-collapse .sub-menu-col-md .sub-menu-ul {
-  width: initial;
-  position: initial;
-  height: initial;
 }
 
 .navbar .navbar-collapse .to-main-menu-arrow {
@@ -201,20 +163,6 @@ aside.second-ad span {
 }
 
 .navbar .navbar-collapse .to-main-menu-arrow img {
-  width: 20px;
-}
-
-.navbar .navbar-collapse .to-main-menu-arrow-md {
-  padding: 10px;
-  margin: 0 0 30px 17px;
-  outline: none;
-  position: absolute;
-  top: 15px;
-  left: calc((100%/12)*5);
-  z-index: 10;
-}
-
-.navbar .navbar-collapse .to-main-menu-arrow-md img {
   width: 20px;
 }
 
@@ -245,58 +193,30 @@ aside.second-ad span {
   margin: 0 0 13px 23px;
 }
 
-.navbar .navbar-collapse .previous-conferences-col {
-  background: #3e3e3e;
-  padding: 20px 0 20px 0;
-}
-
-.navbar .navbar-collapse .previous-conferences-col h2 {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 15px 0;
-}
-
-.navbar .navbar-collapse .previous-conferences-col nav {
-  width: 100%;
-}
-
-.navbar .navbar-collapse .previous-conferences-col ul {
-  width: 60%;
-  text-align: center;
-}
-
-.navbar .navbar-collapse .previous-conferences-col li {
-  display: inline-block;
-  padding: 10px 0;
-}
-
-.navbar .navbar-collapse .previous-conferences-col li a {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 10px;
-}
-
-.navbar .navbar-collapse .do-not-miss-col {
+.navbar .do-not-miss-col {
   background: #D61E12;
-  padding: 20px 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
-.navbar .navbar-collapse .do-not-miss-row h2 {
+.navbar .do-not-miss-row {
+  padding: 30px 0 0 0;
+}
+
+.navbar .do-not-miss-row h2 {
   font-size: 16px;
   font-weight: 700;
   margin: 0 0 15px 0;
 }
 
-.navbar .navbar-collapse .do-not-miss-row .col:first-of-type {
+.navbar .do-not-miss-row .col-md-12:first-of-type {
   margin: 0 0 20px 0;
 }
 
-.navbar .navbar-collapse .do-not-miss-a {
+.navbar .do-not-miss-a {
   cursor: pointer;
 }
 
-.navbar .navbar-collapse article.do-not-miss-article .article-image {
+.navbar article.do-not-miss-article .article-image {
   width: 200px;
   height: 140px;
   background-image: url("/img/mountains.png");
@@ -305,7 +225,7 @@ aside.second-ad span {
   padding: 15px;
 }
 
-.navbar .navbar-collapse article.do-not-miss-article .article-image .category {
+.navbar article.do-not-miss-article .article-image .category {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
@@ -313,7 +233,7 @@ aside.second-ad span {
   padding: 10px 15px;
 }
 
-.navbar .navbar-collapse article.do-not-miss-article .rest {
+.navbar article.do-not-miss-article .rest {
   width: 50%;
   text-transform: uppercase;
   font-size: 14px;
@@ -321,15 +241,42 @@ aside.second-ad span {
   padding: 0 10px 0 10px;
 }
 
-.navbar .navbar-collapse article.do-not-miss-article .rest .read {
+.navbar article.do-not-miss-article .rest .read {
   background: #efefef;
   margin: 20px 0 0 0;
 }
 
-.navbar .navbar-collapse article.do-not-miss-article .rest .date-and-btn {
+.navbar article.do-not-miss-article .rest .date-and-btn {
   margin: 10px 0 0 0;
   font-weight: 300;
   font-size: 12px;
+}
+
+.navbar .top-nav-logo-a img {
+  width: 60px;
+}
+
+.navbar .social-media {
+  margin: 0 10px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+.navbar .social-media ul {
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.navbar .social-media ul li {
+  display: inline-block;
+}
+
+.navbar .social-media ul li a {
+  padding: 5px;
+}
+
+.navbar .social-media ul li a img {
+  width: 18px;
 }
 
 @media (min-width: 768px) {
@@ -413,9 +360,6 @@ aside.second-ad span {
     font-weight: 600;
     margin: 0 0 17px 23px;
   }
-  .navbar .navbar-collapse .do-not-miss-col {
-    padding: 40px 0 0 40px;
-  }
   .navbar .navbar-collapse aside.previous-editions {
     background: #3E3E3E;
     color: white;
@@ -441,54 +385,7 @@ aside.second-ad span {
 
 @media (min-width: 1200px) {
   .navbar .navbar-collapse ul.main-menu {
-    padding: 62px 0 350px 0;
-  }
-  .navbar .navbar-collapse .do-not-miss-and-submenu-col {
-    background: #D61E12;
-  }
-  .navbar .navbar-collapse .sub-menu-xl-row {
-    height: 45%;
-  }
-  .navbar .navbar-collapse .sub-menu-xl-row .col-xl-12 {
-    height: 100%;
-  }
-  .navbar .navbar-collapse .sub-menu-xl-row .sub-menu-ul {
-    position: initial;
-  }
-  .navbar .navbar-collapse .sub-menu-xl-row .sub-menu-ul h2 {
-    margin: 0 0 13px 30px;
-  }
-  .navbar .navbar-collapse .sub-menu-xl-row .sub-menu-ul a {
-    padding: 13px 30px 13px 30px;
-  }
-  .navbar .navbar-collapse .do-not-miss-row {
-    height: 55%;
-    padding: 0 20px 20px 20px;
-  }
-  .navbar .navbar-collapse .do-not-miss-row .border-top {
-    width: 95%;
-    border-top: 1px solid #FECDCD;
-  }
-  .navbar .navbar-collapse .do-not-miss-row h2 {
-    font-size: 18px;
-    margin: 0;
-  }
-  .navbar .navbar-collapse .do-not-miss-row .do-not-miss-article .article-image {
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
-  .navbar .navbar-collapse .do-not-miss-row .do-not-miss-article .rest {
-    width: 100%;
-    padding: 0;
-  }
-  .navbar .navbar-collapse .do-not-miss-row .do-not-miss-article .rest .description {
-    font-weight: 600;
-  }
-  .navbar .navbar-collapse .do-not-miss-row .do-not-miss-article .rest .date-and-btn {
-    margin: 20px 0 0 0;
-  }
-  .navbar .navbar-collapse .do-not-miss-row .do-not-miss-article .rest .read {
-    margin: 0;
+    padding: 62px 0 250px 0;
   }
   .navbar .navbar-collapse .sub-menu {
     z-index: 300;
@@ -500,17 +397,17 @@ aside.second-ad span {
     font-weight: 600;
     margin: 0 0 13px 23px;
   }
-  .navbar .navbar-collapse .previous-conferences-col {
-    padding: 70px 0 20px 30px;
+  .navbar .navbar-collapse aside.previous-editions {
+    z-index: 300;
   }
-  .navbar .navbar-collapse .previous-conferences-col h2 {
-    margin: 0 0 15px 10px;
+  .navbar .navbar-collapse aside.previous-editions h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 80px 0 17px 50px;
   }
-  .navbar .navbar-collapse .previous-conferences-col ul {
-    text-align: left;
-  }
-  .navbar .navbar-collapse .previous-conferences-col ul li {
-    display: block;
+  .navbar .navbar-collapse aside.previous-editions ul li a {
+    font-size: 16px;
+    padding: 13px 100px 13px 50px;
   }
 }
 

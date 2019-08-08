@@ -31,64 +31,6 @@
             }
         }
     }
-    .navbar-collapse {
-        z-index: 100;
-        position: absolute;
-        top: 69px;
-        width: 100%;
-        color: #ffffff;
-        // MAIN MENU
-        ul.main-menu {
-            background-color: $mt-red;
-            text-transform: uppercase;
-            font-size: 16px;
-            font-weight: 600;
-            text-align: left;
-            padding: 37px 0 37px 0;
-            // In graphic project it is 67px wide, but it doesn't look good on 320px screens
-            border-right: solid 50px $darker-red;
-            a {
-                display: block;
-                padding: 13px 50px 13px 70px;
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        }
-        // SUB MENU
-        .sub-menu {
-            background-color: $darker-red;
-            text-transform: uppercase;
-            font-size: 16px;
-            font-weight: 600;
-            text-align: left;
-            width: calc(100% - 70px);
-            padding: 35px 0;
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            a {
-                display: block;
-                padding: 13px 30px 13px 23px;
-                color: #FECDCD;
-                font-weight: 500;
-            }
-            .to-main-menu-arrow {
-                padding: 10px;
-                margin: 0 0 30px 17px;
-                outline: none;
-                img {
-                    width: 20px;
-                }
-            }
-            h2.category {
-                font-size: 18px;
-                font-weight: 600;
-                margin: 0 0 13px 23px;
-            }
-        }
-    }
     .top-nav-logo-a {
         img {
             width: 60px;
@@ -113,21 +55,190 @@
             }
         }
     }
+    .navbar-collapse {
+        z-index: 100;
+        position: absolute;
+        top: 69px;
+        width: 100%;
+        color: #ffffff;
+        background-color: $mt-red;
+        // MAIN MENU
+        ul.main-menu {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+            padding: 37px 0 37px 0;
+            a {
+                display: block;
+                padding: 13px 50px 13px 70px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .col-2 {
+            background-color: $darker-red;
+        }
+        // SUB MENU
+        .sub-menu-col-sm {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+
+        .sub-menu-col-md {
+            background: $darker-red;
+            height: initial;
+            .sub-menu-ul {
+                width: initial;
+                position: initial;
+                height: initial;
+            }
+        }
+        .to-main-menu-arrow {
+            padding: 10px;
+            margin: 0 0 30px 17px;
+            outline: none;
+            position: absolute;
+            top: 15px;
+            left: 67px;
+            z-index: 10;
+            img {
+                width: 20px;
+            }
+        }
+
+        .to-main-menu-arrow-md {
+            padding: 10px;
+            margin: 0 0 30px 17px;
+            outline: none;
+            position: absolute;
+            top: 15px;
+            left: calc((100%/12)*5);
+            z-index: 10;
+            img {
+                width: 20px;
+            }
+        }
+        .sub-menu-ul {
+            background-color: $darker-red;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+            width: calc(100% - 70px);
+            padding: 70px 0 0 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            a {
+                display: block;
+                padding: 13px 30px 13px 23px;
+                color: #FECDCD;
+                font-weight: 500;
+            }
+            h2.category {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 13px 23px;
+            }
+        }
+        .previous-conferences-col {
+            background: #3e3e3e;
+            padding: 20px 0 20px 0;
+            h2{
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0 0 15px 0;
+            }
+            nav {
+                width: 100%;
+            }
+            ul {
+                width: 60%;
+                text-align: center;
+            }
+            li {
+                display: inline-block;
+                padding: 10px 0;
+
+                a {
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 10px 10px;
+                }
+            }
+        }
+        // COL WITH D0 NOT MISS ROW
+        .do-not-miss-col {
+            background: $darker-red;
+            padding: 20px 0 0 20px;
+        }
+        // DO NOT MISS ROW
+        .do-not-miss-row {
+            h2 {
+                font-size: 16px;
+                font-weight: 700;
+                margin: 0 0 15px 0;
+            }
+            .col:first-of-type {
+                margin: 0 0 20px 0;
+            }
+        }
+    
+        // DO NOT MISS LINKS
+        .do-not-miss-a {
+            cursor: pointer;
+        }
+    
+        // DO NOT MISS ARTICLES
+        article.do-not-miss-article {
+            .article-image {
+                width: 200px;
+                height: 140px;
+                background-image: url('/img/mountains.png');
+                background-size: cover;
+                background-position: 50% 50%;
+                padding: 15px;
+                .category {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 12px;
+                    background:$mt-red;
+                    padding: 10px 15px;
+                }
+            }
+            .rest {
+                width: 50%;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                padding: 0 10px 0 10px;
+                .read {
+                    background: #efefef;
+                    margin: 20px 0 0 0;
+                }
+                .date-and-btn {
+                    margin: 10px 0 0 0;
+                    font-weight: 300;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 768px) {
+    
     .navbar {
         .navbar-collapse {
             // MAIN MENU
             ul.main-menu {
-                background-color: $mt-red;
-                text-transform: uppercase;
-                font-size: 16px;
-                font-weight: 600;
-                text-align: left;
-                padding: 37px 0 37px 0;
-                // In graphic project it is 67px wide, but it doesn't look good on 320px screens
-                border-right: solid 50px $darker-red;
+                font-size: 15px;
                 a {
                     display: block;
                     padding: 13px 50px 13px 70px;
@@ -213,60 +324,11 @@
                     
                 }
             }
-            // DO NOT MISS SECTION
-            section.do-not-miss {
-                width: 60%;
-                height: 100%;
-                background: $darker-red;
-                position: absolute;
-                top: 0;
-                right: 0;
-                .container {
-                    padding: 39px 40px 0 40px;
-                }
-                h2 {
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                }
-                article.do-not-miss-article {
-                    margin: 25px 0 0 0;
-                    &:first-of-type {
-                        margin: 15px 0 0 0;
-                    }
-                    .article-image {
-                        width: 50%;
-                        height: 200px;
-                        background-image: url('/img/mountains.png');
-                        background-size: cover;
-                        background-position: 50% 50%;
-                        padding: 15px;
-                        .category {
-                            text-transform: uppercase;
-                            font-weight: 600;
-                            background:$mt-red;
-                            padding: 10px 15px;
-                        }
-                    }
-                    .rest {
-                        width: 50%;
-                        text-transform: uppercase;
-                        font-size: 14px;
-                        font-weight: 700;
-                        padding: 0 10px 0 10px;
-                        .read {
-                            background: #efefef;
-                            margin: 20px 0 0 0;
-                        }
-                        .date {
-                            margin: 20px 0 0 0;
-                            display: block;
-                            font-weight: 300;
-                            font-size: 12px;
-                        }
-                    }
-                }
+            
+            .do-not-miss-col {
+                padding: 40px 0 0 40px;
             }
+            
             aside.previous-editions {
                 background: $dark-gray;
                 color: white;
@@ -274,8 +336,8 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 300px;
                 height: 100%;
+                padding: 0 30px 0 0;
                 h2 {
                     font-weight: 600;
                     font-size: 20px;
@@ -300,15 +362,68 @@
     .navbar {
         .navbar-collapse {
             ul.main-menu {
-                padding: 62px 0 62px 0;
+                // height of whole navbar-collapse depends on this padding
+                padding: 62px 0 350px 0;
                 .nav-item {
                     a {
-                        font-size: 18px;
-                        padding: 25px 50px 25px 70px;
+                        // font-size: 18px;
+                        // padding: 25px 50px 25px 70px;
+                    }
+                }
+            }
+            .do-not-miss-and-submenu-col {
+                background: $darker-red;
+            }
+            .sub-menu-xl-row {
+                height: 45%;
+                .col-xl-12 {
+                    height: 100%;
+                }
+                .sub-menu-ul {
+                    position: initial;
+                    h2 {
+                        margin: 0 0 13px 30px;
+                    }
+                    a {
+                        padding: 13px 30px 13px 30px;
+                    }
+                }
+            }
+            .do-not-miss-row {
+                height: 55%;
+                padding: 0 20px 20px 20px;
+                .border-top {
+                    width: 95%;
+                    border-top: 1px solid #FECDCD;
+                }
+                h2 {
+                    font-size: 18px;
+                    margin: 0;
+                }
+                .do-not-miss-article {
+                    .article-image {
+                        width: 100%;
+                        margin: 0 0 10px 0;
+                    }
+                    .rest {
+                        width: 100%;
+                        padding: 0;
+                        .description {
+                            font-weight: 600;
+                        }
+                        .date-and-btn {
+                            margin: 20px 0 0 0;
+                        }
+                        .read {
+                            margin: 0;
+                        }
                     }
                 }
             }
             .sub-menu {
+                z-index: 300;
+                width: 75%;
+                height: 50%;
                 h2.category {
                     //Im making it 4px smaller than in project
                     font-size: 26px;
@@ -316,20 +431,15 @@
                     margin: 0 0 13px 23px;
                 }
             }
-            aside.previous-editions {
-                width: 420px;
+            .previous-conferences-col {
+                padding: 70px 0 20px 30px;
                 h2 {
-                    //Im making it 4px smaller than in project
-                    font-size: 26px;
-                    font-weight: 600;
-                    margin: 80px 0 17px 50px;
+                    margin: 0 0 15px 10px;
                 }
                 ul {
+                    text-align: left;
                     li {
-                        a {
-                            font-size: 16px;
-                            padding: 13px 100px 13px 50px;
-                        }
+                        display: block;
                     }
                 }
             }
