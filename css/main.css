@@ -205,17 +205,18 @@ aside.second-ad span {
 }
 
 .navbar .navbar-collapse .to-main-menu-arrow-md {
-  padding: 10px;
-  margin: 0 0 30px 17px;
-  outline: none;
-  position: absolute;
-  top: 15px;
   left: calc((100%/12)*5);
-  z-index: 10;
 }
 
-.navbar .navbar-collapse .to-main-menu-arrow-md img {
-  width: 20px;
+.navbar .navbar-collapse .to-main-menu-arrow-lg {
+  top: 35px;
+  margin: 0 0 30px 33px;
+  left: calc((100%/12)*4);
+}
+
+.navbar .navbar-collapse .to-main-menu-arrow-xl {
+  top: 35px;
+  left: 0;
 }
 
 .navbar .navbar-collapse .sub-menu-ul {
@@ -343,28 +344,33 @@ aside.second-ad span {
   .navbar .navbar-collapse ul.main-menu a:hover {
     cursor: pointer;
   }
-  .navbar .navbar-collapse .sub-menu {
-    width: calc(100% - 365px);
-    padding: 35px 0 0 40px;
+  .navbar .navbar-collapse .col-4.sub-menu-col-lg {
+    background: #D61E12;
   }
-  .navbar .navbar-collapse .sub-menu a {
+  .navbar .navbar-collapse .sub-menu-ul {
+    width: initial;
+    position: initial;
+    height: initial;
+    padding: 90px 0 0 0;
+  }
+  .navbar .navbar-collapse .sub-menu-ul a {
     display: block;
-    padding: 13px 30px 13px 23px;
+    padding: 13px 30px 13px 43px;
     color: #FECDCD;
     font-weight: 500;
   }
-  .navbar .navbar-collapse .sub-menu .to-main-menu-arrow {
+  .navbar .navbar-collapse .sub-menu-ul .to-main-menu-arrow-lg {
     padding: 10px;
-    margin: 0 0 30px 0;
-    outline: none;
+    top: 35px;
+    left: calc((100%/12)*8);
   }
-  .navbar .navbar-collapse .sub-menu .to-main-menu-arrow img {
+  .navbar .navbar-collapse .sub-menu-ul .to-main-menu-arrow-lg img {
     width: 20px;
   }
-  .navbar .navbar-collapse .sub-menu h2.category {
+  .navbar .navbar-collapse .sub-menu-ul h2.category {
     font-size: 18px;
     font-weight: 600;
-    margin: 0 0 13px 23px;
+    margin: 0 0 13px 43px;
   }
 }
 
@@ -416,26 +422,18 @@ aside.second-ad span {
   .navbar .navbar-collapse .do-not-miss-col {
     padding: 40px 0 0 40px;
   }
-  .navbar .navbar-collapse aside.previous-editions {
-    background: #3E3E3E;
-    color: white;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    padding: 0 30px 0 0;
+  .navbar .navbar-collapse .col-4.previous-conferences-col {
+    padding: 70px 0 20px 0px;
   }
-  .navbar .navbar-collapse aside.previous-editions h2 {
-    font-weight: 600;
-    font-size: 20px;
-    margin: 80px 0 17px 50px;
+  .navbar .navbar-collapse .col-4.previous-conferences-col h2 {
+    margin: 0 0 15px 43px;
   }
-  .navbar .navbar-collapse aside.previous-editions ul li a {
+  .navbar .navbar-collapse .col-4.previous-conferences-col ul {
+    text-align: left;
+  }
+  .navbar .navbar-collapse .col-4.previous-conferences-col ul li {
     display: block;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 13px 100px 13px 50px;
+    margin: 0 0 0 33px;
   }
 }
 
@@ -490,15 +488,8 @@ aside.second-ad span {
   .navbar .navbar-collapse .do-not-miss-row .do-not-miss-article .rest .read {
     margin: 0;
   }
-  .navbar .navbar-collapse .sub-menu {
-    z-index: 300;
-    width: 75%;
-    height: 50%;
-  }
-  .navbar .navbar-collapse .sub-menu h2.category {
-    font-size: 26px;
-    font-weight: 600;
-    margin: 0 0 13px 23px;
+  .navbar .navbar-collapse .sub-menu-ul {
+    padding: 70px 0 0 0;
   }
   .navbar .navbar-collapse .previous-conferences-col {
     padding: 70px 0 20px 30px;

@@ -109,18 +109,17 @@
                 width: 20px;
             }
         }
-
         .to-main-menu-arrow-md {
-            padding: 10px;
-            margin: 0 0 30px 17px;
-            outline: none;
-            position: absolute;
-            top: 15px;
             left: calc((100%/12)*5);
-            z-index: 10;
-            img {
-                width: 20px;
-            }
+        }
+        .to-main-menu-arrow-lg {
+            top: 35px;
+            margin: 0 0 30px 33px;
+            left: calc((100%/12)*4);
+        }
+        .to-main-menu-arrow-xl {
+            top: 35px;
+            left: 0;
         }
         .sub-menu-ul {
             background-color: $darker-red;
@@ -248,19 +247,24 @@
                 }
             }
             // SUB MENU
-            .sub-menu {
-                width: calc(100% - 365px);
-                padding: 35px 0 0 40px;
+            .col-4.sub-menu-col-lg {
+                background: $darker-red;
+            }
+            .sub-menu-ul {
+                width: initial;
+                position: initial;
+                height: initial;
+                padding: 90px 0 0 0;
                 a {
                     display: block;
-                    padding: 13px 30px 13px 23px;
+                    padding: 13px 30px 13px 43px;
                     color: #FECDCD;
                     font-weight: 500;
                 }
-                .to-main-menu-arrow {
+                .to-main-menu-arrow-lg {
                     padding: 10px;
-                    margin: 0 0 30px 0;
-                    outline: none;
+                    top: 35px;
+                    left: calc((100%/12)*8);
                     img {
                         width: 20px;
                     }
@@ -268,7 +272,7 @@
                 h2.category {
                     font-size: 18px;
                     font-weight: 600;
-                    margin: 0 0 13px 23px;
+                    margin: 0 0 13px 43px;
                 }
             }
         }
@@ -324,33 +328,19 @@
                     
                 }
             }
-            
             .do-not-miss-col {
                 padding: 40px 0 0 40px;
             }
-            
-            aside.previous-editions {
-                background: $dark-gray;
-                color: white;
-                text-transform: uppercase;
-                position: absolute;
-                top: 0;
-                right: 0;
-                height: 100%;
-                padding: 0 30px 0 0;
+            .col-4.previous-conferences-col {
+                padding: 70px 0 20px 0px;
                 h2 {
-                    font-weight: 600;
-                    font-size: 20px;
-                    margin: 80px 0 17px 50px;
+                    margin: 0 0 15px 43px;
                 }
                 ul {
+                    text-align: left;
                     li {
-                        a {
-                            display: block;
-                            font-size: 15px;
-                            font-weight: 700;
-                            padding: 13px 100px 13px 50px;
-                        }
+                        display: block;
+                        margin: 0 0 0 33px;
                     }
                 }
             }
@@ -420,16 +410,8 @@
                     }
                 }
             }
-            .sub-menu {
-                z-index: 300;
-                width: 75%;
-                height: 50%;
-                h2.category {
-                    //Im making it 4px smaller than in project
-                    font-size: 26px;
-                    font-weight: 600;
-                    margin: 0 0 13px 23px;
-                }
+            .sub-menu-ul {
+                padding: 70px 0 0 0;                
             }
             .previous-conferences-col {
                 padding: 70px 0 20px 30px;
