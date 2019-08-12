@@ -1,7 +1,5 @@
 $(window).on('resize', function() {
-    // openAndCloseSubMenuSm();
-    // openAndCloseSubMenuMd();
-    // openAndCloseSubMenuXl();
+    changeHeight();
 });
 $(window).on('load', function(){
     
@@ -12,17 +10,52 @@ $(window).on('scroll', function(){
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        nav: true,
-        loop: true,
-        responsive:{
-            0:{
-                items:1
-            }
-        },
-    }
+            nav: true,
+            loop: true,
+            responsive:{
+                0:{
+                    items:1
+                }
+            },
+        }
     );
 });
 
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
+// change height of pictures
+function changeHeight(){
+    let windowWidth = window.innerWidth;
+    
+    let myElementsHeight = windowWidth * 0.6;
+    let myElementsHeightMd = windowWidth * 0.3;
+
+    let myElements = document.querySelectorAll('.img-size');
+
+    if(windowWidth < 768){
+        for(let i = 0; i < myElements.length; i++){
+            let element = myElements[i];
+            element.style.height =  myElementsHeight + 'px';
+        }
+    } else if (windowWidth >=768) {
+        for(let i = 0; i < myElements.length; i++){
+            let element = myElements[i];
+            element.style.height =  myElementsHeightMd + 'px';
+        }
+    }
+    
+}
+
+changeHeight();
 
 function openAndCloseSubMenuSm() {
     //take all links from main manu so we can add addEventListener to them

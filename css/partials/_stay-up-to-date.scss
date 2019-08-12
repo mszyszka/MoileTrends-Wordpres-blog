@@ -49,3 +49,9 @@ section.stay-up-to-date {
         }
     }
 }
+
+@media (min-width: 768px) {
+    section.stay-up-to-date {
+        padding: 0 12px 0 0;
+    }
+}

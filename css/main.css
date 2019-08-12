@@ -62,6 +62,7 @@ aside.second-ad span {
 
 .article p {
   margin: 0 0 20px 0;
+  font-size: 14px;
 }
 
 .article .text {
@@ -333,6 +334,10 @@ aside.second-ad span {
   font-size: 12px;
 }
 
+.navbar .navbar-collapse article.do-not-miss-article .rest .date {
+  margin-left: 5px;
+}
+
 @media (min-width: 768px) {
   .navbar .navbar-collapse ul.main-menu {
     font-size: 15px;
@@ -596,18 +601,6 @@ button.category-btn {
   background-size: cover;
 }
 
-@media (min-width: 576px) {
-  .my-article {
-    height: 300px;
-  }
-}
-
-@media (min-width: 768px) {
-  .my-article {
-    height: 350px;
-  }
-}
-
 @media (min-width: 992px) {
   .my-article {
     height: 400px;
@@ -621,9 +614,6 @@ button.category-btn {
 }
 
 @media (min-width: 1200px) {
-  .my-article {
-    height: 500px;
-  }
   .first-article {
     height: 250px;
   }
@@ -682,19 +672,38 @@ section.most-popular .container-fluid .article:last-of-type {
 
 section.most-popular .container-fluid .article .text {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0;
   margin: 15px 0 0 0;
   line-height: 1.4;
 }
 
 section.most-popular .container-fluid .article .text .link-to-article {
-  background: #efefef;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#ffffff));
+  background: linear-gradient(#e2e2e2, #ffffff);
   color: #000000;
-  padding: 10px 20px;
-  font-weight: 500;
+  border: 1px solid #e2e2e2;
+  padding: 7px 12px;
+  font-weight: 600;
+  border-radius: 1px;
+}
+
+section.most-popular .container-fluid .article .text .link-to-article:hover, section.most-popular .container-fluid .article .text .link-to-article:active {
+  background: #ffffff;
+}
+
+section.most-popular .container-fluid .article .text p {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+@media (min-width: 768px) {
+  section.most-popular {
+    padding: 39px 12px 0 0px;
+    margin: 0;
+  }
 }
 
 section.stay-up-to-date {
@@ -773,6 +782,12 @@ section.stay-up-to-date .container-fluid p {
 
 section.stay-up-to-date .container-fluid span {
   font-size: 11px;
+}
+
+@media (min-width: 768px) {
+  section.stay-up-to-date {
+    padding: 0 12px 0 0;
+  }
 }
 
 section.media {
